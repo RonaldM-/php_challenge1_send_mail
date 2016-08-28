@@ -1,3 +1,11 @@
+<!--
+//TODO[] Utilisez Bootstrap OU Fundation OU Material Design Light
+//TODO[] Vérifiez si l’adresse e-mail est valide (utilisation des REGEX)
+//TODO[x] Limiter la taille du message à 500 caractères
+//TODO[] Laisser l’utilisateur ajouter plusieurs destinataires dans le champs email
+//TODO[] Autoriser les emoji, le texte en gras, les images et même les vidéos youtube
+//TODO[] Ou n’importe quoi d’autre que vous croyez être une fonctionnalité sympa !
+-->
 <?php
     include ('header.php');
 ?>
@@ -6,6 +14,12 @@
 
 <form action="send_mail.php" method="post">
         À:
+            <input type="email" name="Email" id="email" value="refd">
+        <br>
+        Cc:
+            <input type="email" name="Email" id="email" value="refd">
+        <br>
+        Cci:
             <input type="email" name="Email" id="email" value="refd">
         <br>
         Objet:
@@ -20,3 +34,5 @@
 <?php
     include('footer.php');
 ?>
+
+

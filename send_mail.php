@@ -1,12 +1,9 @@
-<?php counter_chars(); ?>
-
 <?php
-function counter_chars(){
-    $nbchar = strlen($_POST['content_mail']);
-    $count = 500 - $nbchar;
-    echo ('Le nombre de caractère est: ' .$nbchar. '!<br>');
+    $to = '';
+    $subject = '';
+    $message = '';
+    $message = wordwrap($message, 70, "\r\n");
+    $headers = '';
 
-    echo ('Il vous reste ' .$count. ' caractères !');
-}
-
+mail($to, $subject, $message, $headers);
 ?>

@@ -1,4 +1,5 @@
 <!--
+//TODO[x] Envoyer un mail
 //TODO[] Utilisez Bootstrap OU Fundation OU Material Design Light
 //TODO[] Vérifiez si l’adresse e-mail est valide (utilisation des REGEX)
 //TODO[x] Limiter la taille du message à 500 caractères
@@ -14,18 +15,18 @@
 
 <form action="send_mail.php" method="post">
         À:
-            <input type="email" name="Email" id="email" value="refd">
+            <input type="email" name="emailto" id="email" value="">
         <br>
         Cc:
-            <input type="email" name="Email" id="email" value="refd">
+            <input type="email" name="email" id="email" value="">
         <br>
         Cci:
-            <input type="email" name="Email" id="email" value="refd">
+            <input type="email" name="Email" id="email" value="">
         <br>
         Objet:
-            <input type="text" name="Objet" placeholder="Enter Email's objet, please!">
+            <input type="text" name="subject" placeholder="Enter Email's objet, please!">
         <br>
-        <textarea name="text_email" id="text_email" cols="100" rows="20"  maxlength="500"></textarea>
+        <textarea name="message" id="text_email" cols="100" rows="20"  maxlength="500"></textarea>
         <p id="lastchars"></p>
         <br>
         <input type="submit" value="Send it!">

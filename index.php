@@ -15,13 +15,13 @@
 
 <form action="send_mail.php" method="post" enctype="multipart/form-data">
         À:
-            <input type="email" name="email" id="email" value="">
+            <input type="email" name="email" id="emailto" value="">
         <br>
         Cc:
-            <input type="email" name="emailcc" id="email" value="">
+            <input type="email" name="emailcc" id="emailcc" value="">
         <br>
         Cci:
-            <input type="email" name="emailcci" id="email" value="">
+            <input type="email" name="emailcci" id="emailcci" value="">
         <br>
         Objet:
             <input type="text" name="subject" placeholder="Enter Email's objet, please!">

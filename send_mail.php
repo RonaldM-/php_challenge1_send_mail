@@ -5,7 +5,7 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
 
     $to = $_POST["email"];
     $cc = $_POST['emailcc'];
-    $bcc = $_POST['emailcci']
+    $bcc = $_POST['emailcci'];
     $subject = $_POST["subject"];
     $message = $_POST["message"];
     $message = wordwrap($message, 70, "\r\n");
